@@ -24,7 +24,7 @@ class SortedList {
   }
 
   max() {
-    if (!this.items.length) {
+    if (!this.length) {
       throw new Error('EmptySortedList');
     } else {
       return this.items.reduce((acc, item) => Math.max(acc, item));
@@ -32,7 +32,7 @@ class SortedList {
   }
 
   min() {
-    if (!this.items.length) {
+    if (!this.length) {
       throw new Error('EmptySortedList');
     } else {
       return this.items.reduce((acc, item) => Math.min(acc, item));
